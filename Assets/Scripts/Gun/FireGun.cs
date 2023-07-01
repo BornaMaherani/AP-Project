@@ -37,7 +37,8 @@ public class FireGun : MonoBehaviour
                     pos = child.GetComponent<Transform>().position;
                 }
             }
-            Instantiate(tir, new Vector2(pos.x, pos.y), Quaternion.identity);
+            var newTir = Instantiate(tir, new Vector2(pos.x, pos.y), Quaternion.identity);
+            newTir.name = "newTir";
         }
     }
 

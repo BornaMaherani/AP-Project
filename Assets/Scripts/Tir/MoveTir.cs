@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class MoveTir : MonoBehaviour
 {
-    public float rapid = 1.0f;
+    public float speed = 20f;
     // Start is called before the first frame update
     void Start()
     {
-        var pos = transform.position;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         var pos = transform.position;
-        pos.y = (pos.y + 0.05f) * rapid;
-        transform.position = new Vector2(pos.x, pos.y);
+        //pos.y = (pos.y + rapid);
+        transform.Translate((transform.up * speed * Time.deltaTime));
+        if (transform.position.y >= 6 && gameObject.name == "newTir")
+        {
+            Destroy(gameObject);
+        }
     }
 }
