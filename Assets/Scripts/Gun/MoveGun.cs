@@ -7,28 +7,16 @@ public class MoveGun : MonoBehaviour
 {
     Vector2 first, second;
     public float speed = 5;
+    float width;
     // Start is called before the first frame update
     void Start()
     {
-
+        width = (float)Screen.width / 2.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            first = Camera.main.ScreenToViewportPoint(new Vector2(Input.mousePosition.x, 0));
-        }
-
-        if (Input.GetMouseButton(0))
-        {
-            var pos = transform.position;
-            second = Camera.main.ScreenToViewportPoint(new Vector2(Input.mousePosition.x, 0));
-            Vector3 diff = second - first;
-            transform.position += diff * Time.deltaTime * speed;
-            first = second;
-        }
 
         if(Input.touchCount > 0)
         {

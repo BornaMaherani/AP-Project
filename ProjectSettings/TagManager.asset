@@ -11,10 +11,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ToopLvl1
   - Water
   - UI
-  - 
+  - Gun
   - 
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Toop1
+    uniqueID: 860238915
+    locked: 0
+  - name: Toop2
+    uniqueID: 2450269029
     locked: 0

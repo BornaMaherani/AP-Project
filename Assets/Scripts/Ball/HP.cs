@@ -20,7 +20,16 @@ public class HP : MonoBehaviour
         Hp -= 1;
         if (Hp <= 0)
         {
-            Destroy(gameObject);
+            RandomTimeSpawn.count--;
+            if (gameObject.name == "ToopLvl1")
+            {
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 }

@@ -9,7 +9,7 @@ public class RandomBallSpawn : MonoBehaviour
     void Start()
     {
         transform.position = new Vector2(Random.Range(-2, 2), 5.4f);
-        var position = new Vector2(Random.Range(-2f, 2f), Random.Range(-0.8f, 0));
+        var position = new Vector2(Random.Range(-2f, 2f), Random.Range(-0.4f, 0));
         rb.AddForce(position * 2, ForceMode2D.Impulse);
     }
 

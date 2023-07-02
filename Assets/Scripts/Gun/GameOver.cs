@@ -21,5 +21,5 @@ public class GameOver : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    } 
 }
