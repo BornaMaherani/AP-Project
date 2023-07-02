@@ -8,9 +8,12 @@ public class RandomBallSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector2(Random.Range(-2, 2), 5.4f);
-        var position = new Vector2(Random.Range(-2f, 2f), Random.Range(-0.4f, 0));
-        rb.AddForce(position * 2, ForceMode2D.Impulse);
+        if (gameObject.name == "newBall")
+        {
+            transform.position = new Vector2(Random.Range(-2, 2), 5.4f);
+            var position = new Vector2(Random.Range(-2f, 2f), Random.Range(-0.4f, 0));
+            rb.AddForce(position * 2, ForceMode2D.Impulse);
+        }
     }
 
     // Update is called once per frame

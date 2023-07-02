@@ -17,7 +17,7 @@ public class MoveTir : MonoBehaviour
         var pos = transform.position;
         //pos.y = (pos.y + rapid);
         transform.Translate((transform.up * speed * Time.deltaTime));
-        if (transform.position.y >= 6 && gameObject.name == "newTir")
+        if (transform.position.y >= 5 && gameObject.name == "newTir")
         {
             Destroy(gameObject);
         }
