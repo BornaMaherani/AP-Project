@@ -7,6 +7,7 @@ TagManager:
   - toop
   - muzzle
   - wall
+  - toop2
   layers:
   - Default
   - TransparentFX

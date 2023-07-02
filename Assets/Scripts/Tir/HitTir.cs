@@ -23,5 +23,10 @@ public class HitTir : MonoBehaviour
             hp.hpDeacres();
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("toop2")) {
+            var hp2 = collision.gameObject.GetComponent<Hp2>();
+            hp2.hpDeacres();
+            Destroy(gameObject);
+        }
     }
 }
